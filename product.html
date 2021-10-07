@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Arimo:wght@500&display=swap" rel="stylesheet">
+<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script> 
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+        div {
+           
+            font-family: 'Arimo', sans-serif;
+            
+            
+        }
+        
+        .card{
+            width: 40rem;
+            height: 22rem;
+            border: 1px solid white;
+            
+            display: none;
+           
+            
+        }
+        .checked{
+            color: orange;
+        }
+        button{
+            width: 130px;
+            height: 40px;
+            border-radius: 3px;
+            color:#fff;
+            background-color: #e771b4;
+            margin-left: 20px;
+            
+        }
+        #bt{
+            height: 30px;
+            width:80px;
+            background-color: black;
+            color: #fff;
+        }
+        .card-title{
+            color: black;
+           
+        }
+        .card-price{
+            color: black;
+            text-align: center;
+        }
+        p{
+            font-size: 12px;
+        }
+
+    </style>
+</head>
+<body>
+    
+    <button id="bt">Click</button>
+    <center>
+    <div class="card" id="h" >
+        <img src="bags.png" class="card-img" alt="bag1.jpg" width="200" height="200">
+        <div class="card-body">
+          <h2 class="card-title">Lino Perros Women Hand bag</h2>
+          <h4 class="card-price">Price : &#x20b9; 500 <h4>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star checked"></span>
+            <span class="fa fa-star"></span>
+            <span class="fa fa-star"></span>
+
+            <h3 style="color:black;">Description</h3>
+            <p class="card-text" id="para">Lorem ipsum, dolor sit amet consectetur 
+                adipisicing elit.<i class="fa fa-angle-double-down" style="font-size:24px" id="arrow"></i><span class="des" id="des" style="display:none"> <br>Ratione perspiciatis laboriosam asperiores 
+                eligendi recusandae, ipsa numquam ipsum optio, neque deleniti inventore
+                 quae vitae! Incidunt quidem officia reprehenderit? Dicta, nihil optio</span></p>
+            <button id="btn">Buy Now</button>
+          <button>Add to cart</button>
+
+        </div>
+      </div>
+    </center>
+    <script>
+      $('#arrow').click(function(){
+           $("#des").show();
+      })
+      $('#bt').click(function(){
+          $('#h').fadeIn(3000)
+      })
+    </script>
+    
+</body>
+</html>
